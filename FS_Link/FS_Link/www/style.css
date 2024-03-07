@@ -1,0 +1,80 @@
+body {
+	font-size: 18px
+}
+
+a {
+	font-size: 22px
+}
+
+caret-color: transparent;
+
+img {
+	max-height: 500px;
+	max-weight: 500px;
+}
+
+input.panel_h {
+    padding: 15px 10px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    text-decoration: none;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	font-size: 22px
+}
+
+#error {
+	background-color: yellow;
+	border: 2px dotted;
+	border-radius : 10px;
+	padding: 10px;
+}
+
+#copy {
+	text-align: center;
+	font-size: 22px;
+	margin-top: 10px;
+	color: gray;
+}
+
+#error:empty {
+  display: none;
+}
+
+table, th, td {
+  border: 1px dashed black;
+  border-collapse: collapse;
+}
+
+th {
+	background-color: gray;
+	color: white;
+}
+table {
+	table-layout: fixed;
+	width: 100%;
+
+}
+
+.hcol1 {
+	width: 80%;
+	padding: 10px;
+}
+.hcol2 {
+	width: 10%;
+	text-align: center;
+}
+.hcol3 {
+	width: 10%;
+	text-align: center;
+}
+  
+ tr td:nth-child(1) {
+	padding: 5px;
+} 
+tr td:nth-child(2) {
+   text-align: center
+}
+tr td:nth-child(3) {
+   text-align: center
+}

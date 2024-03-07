@@ -1,0 +1,34 @@
+[
+	{
+		"Req": "/favicon.ico",
+		"Path": "www/favicon.ico",
+		"ContentType": "image/png"
+	},
+	{
+		"Req": "/favicon.ico",
+		"Path": "www/favicon.ico",
+		"ContentType": "image/png"
+	},
+	{
+		"Req": "/app.js",
+		"Path": "www/app.js",
+		"ContentType": "text/javascript"
+		
+	},
+	{
+		"Req": "/background.jpg",
+		"Path": "www/background.jpg",
+		"ContentType": "image/jpg"
+		
+	},
+	{
+		"Req": "/style.css",
+		"Path": "www/style.css",
+		"ContentType": "text/css"
+	}
+]
+
+
+
+		
+         
