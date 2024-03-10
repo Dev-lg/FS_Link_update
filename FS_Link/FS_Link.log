@@ -71,3 +71,18 @@
 2024-03-08 19:58:25,764 [1] INFO - Read json settings for static files
 2024-03-08 19:58:25,863 [1] INFO - Start http server
 2024-03-08 19:58:25,863 [1] INFO - Server url=http://localhost:8000/
+2024-03-08 22:44:41,059 [1] INFO - App starting..
+2024-03-08 22:44:41,065 [1] INFO - Read ini setttings
+2024-03-08 22:44:41,066 [1] INFO - Read json settings for static files
+2024-03-08 22:44:41,175 [1] INFO - Start http server
+2024-03-08 22:44:41,175 [1] INFO - Server url=http://localhost:8000/
+2024-03-09 21:50:43,163 [1] INFO - App starting..
+2024-03-09 21:50:43,170 [1] INFO - Read ini setttings
+2024-03-09 21:50:43,171 [1] INFO - Read json settings for static files
+2024-03-09 21:50:43,310 [1] INFO - Start http server
+2024-03-09 21:50:43,310 [1] INFO - Server url=http://localhost:8000/
+2024-03-10 19:06:47,551 [1] INFO - App starting..
+2024-03-10 19:06:47,558 [1] INFO - Read ini setttings
+2024-03-10 19:06:47,559 [1] INFO - Read json settings for static files
+2024-03-10 19:06:47,714 [1] INFO - Start http server
+2024-03-10 19:06:47,715 [1] INFO - Server url=http://localhost:8000/

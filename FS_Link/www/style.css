@@ -1,9 +1,10 @@
 body {
-	font-size: 18px
+	font-size: 18px;
+
 }
 
 a {
-	font-size: 22px
+	font-size: 22px;
 }
 
 caret-color: transparent;
@@ -31,6 +32,13 @@ input.panel_h {
 }
 
 #copy {
+	text-align: center;
+	font-size: 22px;
+	margin-top: 10px;
+	color: gray;
+}
+
+#version {
 	text-align: center;
 	font-size: 22px;
 	margin-top: 10px;
