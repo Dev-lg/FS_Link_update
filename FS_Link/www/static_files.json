@@ -22,6 +22,12 @@
 		
 	},
 	{
+		"Req": "/git_version.html",
+		"Path": "www/git_version.html",
+		"ContentType": "text/html"
+		
+	},
+	{
 		"Req": "/style.css",
 		"Path": "www/style.css",
 		"ContentType": "text/css"

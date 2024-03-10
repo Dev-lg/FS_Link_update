@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<script src="app.js"></script>
@@ -5,7 +6,11 @@
 </head>
 <body>
 	<div id="link_abs">{{link_abs}}</div>
-	<div id="button_panel">{{button_panel}}</div>
+	<div id="button_panel">
+		<input id="button_root" class="panel_h" type="button" value="&#8593 Parent directory"/>
+		<input id="button_create_dir" class="panel_h" type="button" value="Create directory"/>
+		<input id="button_open" class="panel_h" type="button" value="Open directory"/>
+	</div>
 	<div id="error">{{error_text}}</div>
 	<div id="content">{{content}}</div>
 	<div id="copy">©lgdev 2024</div>

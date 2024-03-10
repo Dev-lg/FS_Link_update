@@ -33,14 +33,14 @@ input.panel_h {
 
 #copy {
 	text-align: center;
-	font-size: 22px;
+	font-size: 12px;
 	margin-top: 10px;
 	color: gray;
 }
 
 #version {
 	text-align: center;
-	font-size: 22px;
+	font-size: 12px;
 	margin-top: 10px;
 	color: gray;
 }
@@ -86,3 +86,5 @@ tr td:nth-child(2) {
 tr td:nth-child(3) {
    text-align: center
 }
+
+

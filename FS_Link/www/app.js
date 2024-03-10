@@ -14,21 +14,36 @@ window.onload = (event) => {
 		});
 	}
 	
-	//if( window.location.pathname.split('/')[1] == "") {
-	//	button_root.disabled = true;
-	//}
+	// disable button_root if we in root path
+	var fullPath = document.getElementById('link_abs').getElementsByTagName('a')[0].innerHTML;
+	var pathArr = GetPathArr(fullPath);
+	if(pathArr.length == 1) {
+		button_root.disabled = true;
+	}
+	
+	// disable create and open folder when error occur
+	var err = document.getElementById('error');
+	if(err.innerHTML != "") {
+		button_create_dir.disabled = true;
+		button_open.disabled = true;
+	}
+	
+	// load git version
+	fetch("/git_version.html")
+		.then(res => res.text())
+		.then(res => version.innerHTML = "GIT v.: " + res)
+		
+	
+	
 	button_root.addEventListener('click', async _ => {
-		var fullPath = document.getElementById('link_abs')
-                   .getElementsByTagName('a')[0].innerHTML;
-		fullPath = decodeURI(fullPath).split('\\');
-		// delete empty element from array
-		fullPath = fullPath.reduce((acc, i) => i ? [...acc, i] : acc, []);
+		var fullPath = document.getElementById('link_abs').getElementsByTagName('a')[0].innerHTML;
+		var pathArr = GetPathArr(fullPath);
 		var upPath = "";
-		for (i = 0; i < fullPath.length - 1; i++) {			
-			upPath += fullPath[i];
+		for (i = 0; i < pathArr.length - 1; i++) {			
+			upPath += pathArr[i];
 			upPath += "\\";
 		}
-		if(fullPath.length > 2) {
+		if(pathArr.length > 2) {
 			upPath = upPath.slice(0, -1);
 		}
 		console.log(upPath);
@@ -76,4 +91,11 @@ window.onload = (event) => {
 
 function Copy(link) {
 	navigator.clipboard.writeText(link);
+}
+
+function GetPathArr(path) {
+	path = decodeURI(path).split('\\');
+	// delete empty element from array
+	path = path.reduce((acc, i) => i ? [...acc, i] : acc, []);
+	return path;
 }
